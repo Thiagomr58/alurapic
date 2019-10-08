@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
-import { Photo } from '../photo/photo';
-import { PhotoService } from '../photo/photo.service';
+import {Photo} from '../photo/photo';
+import {PhotoService} from '../photo/photo.service';
 
 @Component({
   selector: 'app-photo-list',
@@ -20,7 +20,8 @@ export class PhotoListComponent implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private photoService: PhotoService
-  ) { }
+  ) {
+  }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
